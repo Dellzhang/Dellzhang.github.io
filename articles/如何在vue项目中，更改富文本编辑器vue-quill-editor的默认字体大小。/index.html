@@ -49,23 +49,34 @@
   };
 </script>
 
-  <meta name="description" content="首先安装**clipboard1npm install  clipboard &#x3D;&#x3D;如果你安装了淘宝镜像也可以使用cnpm&#x3D;&#x3D; 在需要使用地方引入1import Clipboard from &#39;clipboard&#39;">
+  <meta name="description" content="它默认有4种字体大小，但是在我们实际的项目，可能不只是想要这几种，还想添加自定义的字体大小。下面我就来教大家，怎样改它的默认字体大小 我们先改，自己封装的vue-quill-editor组件中的字体大小，如图是我自定义的字体大小，false代表的默认选中的字体大小,默认选中的14px。 我们先在  node_modules包 中找到  quill ，再找到它下面的dist文件夹。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在vue中如何使用clipboard复制文字">
-<meta property="og:url" content="https:&#x2F;&#x2F;dellzhang.github.io&#x2F;mengen&#x2F;2019&#x2F;11&#x2F;10&#x2F;%E5%9C%A8vue%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8clipboard%E5%A4%8D%E5%88%B6%E6%96%87%E5%AD%97&#x2F;index.html">
+<meta property="og:title" content="如何在vue项目中，更改富文本编辑器vue-quill-editor的默认字体大小。">
+<meta property="og:url" content="https:&#x2F;&#x2F;dellzhang.github.io&#x2F;mengen&#x2F;articles&#x2F;%E5%A6%82%E4%BD%95%E5%9C%A8vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%EF%BC%8C%E6%9B%B4%E6%94%B9%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8vue-quill-editor%E7%9A%84%E9%BB%98%E8%AE%A4%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%E3%80%82&#x2F;index.html">
 <meta property="og:site_name" content="梦恩の博客">
-<meta property="og:description" content="首先安装**clipboard1npm install  clipboard &#x3D;&#x3D;如果你安装了淘宝镜像也可以使用cnpm&#x3D;&#x3D; 在需要使用地方引入1import Clipboard from &#39;clipboard&#39;">
+<meta property="og:description" content="它默认有4种字体大小，但是在我们实际的项目，可能不只是想要这几种，还想添加自定义的字体大小。下面我就来教大家，怎样改它的默认字体大小 我们先改，自己封装的vue-quill-editor组件中的字体大小，如图是我自定义的字体大小，false代表的默认选中的字体大小,默认选中的14px。 我们先在  node_modules包 中找到  quill ，再找到它下面的dist文件夹。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2019-11-10T06:19:08.000Z">
-<meta property="article:modified_time" content="2019-12-17T09:16:11.610Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20190921132036411.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20190921133609122.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMTg2NzMw,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20190921133840764.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMTg2NzMw,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20190921134309126.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20190921134844696.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20190921134602102.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20190921140126888.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMTg2NzMw,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;2019092114010124.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMTg2NzMw,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20190921140321662.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20190921140658703.png?x-oss-process&#x3D;image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMTg2NzMw,size_16,color_FFFFFF,t_70">
+<meta property="article:published_time" content="2019-11-08T02:10:30.000Z">
+<meta property="article:modified_time" content="2019-12-17T09:16:41.241Z">
 <meta property="article:author" content="ZhangMengEn">
 <meta property="article:tag" content="js">
 <meta property="article:tag" content="vue">
-<meta property="article:tag" content="复制">
-<meta property="article:tag" content="clipboard">
+<meta property="article:tag" content="富文本编辑器">
+<meta property="article:tag" content="vue-quill-editor">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20190921132036411.png">
 
-<link rel="canonical" href="https://dellzhang.github.io/mengen/2019/11/10/%E5%9C%A8vue%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8clipboard%E5%A4%8D%E5%88%B6%E6%96%87%E5%AD%97/">
+<link rel="canonical" href="https://dellzhang.github.io/mengen/articles/%E5%A6%82%E4%BD%95%E5%9C%A8vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%EF%BC%8C%E6%9B%B4%E6%94%B9%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8vue-quill-editor%E7%9A%84%E9%BB%98%E8%AE%A4%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%E3%80%82/">
 
 
 <script id="page-configurations">
@@ -77,7 +88,7 @@
   };
 </script>
 
-  <title>在vue中如何使用clipboard复制文字 | 梦恩の博客</title>
+  <title>如何在vue项目中，更改富文本编辑器vue-quill-editor的默认字体大小。 | 梦恩の博客</title>
   
 
 
@@ -234,7 +245,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://dellzhang.github.io/mengen/2019/11/10/%E5%9C%A8vue%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8clipboard%E5%A4%8D%E5%88%B6%E6%96%87%E5%AD%97/">
+    <link itemprop="mainEntityOfPage" href="https://dellzhang.github.io/mengen/articles/%E5%A6%82%E4%BD%95%E5%9C%A8vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%EF%BC%8C%E6%9B%B4%E6%94%B9%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8vue-quill-editor%E7%9A%84%E9%BB%98%E8%AE%A4%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%E3%80%82/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/mengen/images/avatar.jpg">
@@ -247,7 +258,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          在vue中如何使用clipboard复制文字
+          如何在vue项目中，更改富文本编辑器vue-quill-editor的默认字体大小。
         </h1>
 
         <div class="post-meta">
@@ -257,14 +268,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-11-10 14:19:08" itemprop="dateCreated datePublished" datetime="2019-11-10T14:19:08+08:00">2019-11-10</time>
+              <time title="创建时间：2019-11-08 10:10:30" itemprop="dateCreated datePublished" datetime="2019-11-08T10:10:30+08:00">2019-11-08</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-17 17:16:11" itemprop="dateModified" datetime="2019-12-17T17:16:11+08:00">2019-12-17</time>
+                <time title="修改时间：2019-12-17 17:16:41" itemprop="dateModified" datetime="2019-12-17T17:16:41+08:00">2019-12-17</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -272,8 +283,8 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/mengen/categories/vue/" itemprop="url" rel="index">
-                    <span itemprop="name">vue</span>
+                  <a href="/mengen/categories/vue-quill-editor/" itemprop="url" rel="index">
+                    <span itemprop="name">vue-quill-editor</span>
                   </a>
                 </span>
             </span>
@@ -284,7 +295,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>3.8k</span>
+              <span>3.4k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -303,16 +314,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h5 id="首先安装-clipboard"><a href="#首先安装-clipboard" class="headerlink" title="首先安装**clipboard"></a>首先安装**<code>clipboard</code></h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install  clipboard</span><br></pre></td></tr></table></figure>
-<p>==如果你安装了淘宝镜像也可以使用cnpm==</p>
-<h5 id="在需要使用地方引入"><a href="#在需要使用地方引入" class="headerlink" title="在需要使用地方引入"></a>在需要使用地方引入</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Clipboard <span class="keyword">from</span> <span class="string">'clipboard'</span></span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
+        <p>   <strong>它默认有4种字体大小，但是在我们实际的项目，可能不只是想要这几种，还想添加自定义的字体大小。</strong><img src="https://img-blog.csdnimg.cn/20190921132036411.png" alt="在这里插入图片描述"><br><strong>下面我就来教大家，怎样改它的默认字体大小</strong></p>
+<h5 id="我们先改，自己封装的vue-quill-editor组件中的字体大小，如图是我自定义的字体大小，false代表的默认选中的字体大小-默认选中的14px。"><a href="#我们先改，自己封装的vue-quill-editor组件中的字体大小，如图是我自定义的字体大小，false代表的默认选中的字体大小-默认选中的14px。" class="headerlink" title="我们先改，自己封装的vue-quill-editor组件中的字体大小，如图是我自定义的字体大小，false代表的默认选中的字体大小,默认选中的14px。"></a>我们先改，自己封装的vue-quill-editor组件中的字体大小，如图是我自定义的字体大小，<font color=red>false</font>代表的默认选中的<font color=red>字体大小</font>,默认选中的<font color=red>14px</font>。</h5><p><img src="https://img-blog.csdnimg.cn/20190921133609122.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMTg2NzMw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h5 id="我们先在-node-modules包-中找到-quill-，再找到它下面的dist文件夹。"><a href="#我们先在-node-modules包-中找到-quill-，再找到它下面的dist文件夹。" class="headerlink" title="我们先在  node_modules包 中找到  quill ，再找到它下面的dist文件夹。"></a>我们先在 <font color=red> node_modules包 </font>中找到 <font color=red> quill ，</font>再找到它下面的<font color=red>dist文件夹</font>。</h5><a id="more"></a>
 
 
-<h5 id="使用-Clipboard提供的方法"><a href="#使用-Clipboard提供的方法" class="headerlink" title="使用  Clipboard提供的方法"></a>使用  Clipboard提供的方法</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">linecopy(index)&#123;</span><br><span class="line">      <span class="keyword">let</span> clipboard =<span class="keyword">new</span> Clipboard(<span class="string">'.spa'</span>,&#123;</span><br><span class="line">        text: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">          <span class="keyword">return</span> index</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;)</span><br><span class="line">      clipboard.on(<span class="string">'success'</span>,e=&gt;&#123;</span><br><span class="line">        <span class="keyword">this</span>.$notify(&#123;</span><br><span class="line">          title: <span class="string">'成功'</span>,</span><br><span class="line">          message: <span class="string">'复制成功'</span>,</span><br><span class="line">          type: <span class="string">'success'</span>,</span><br><span class="line">          duration: <span class="number">400</span></span><br><span class="line">        &#125;)</span><br><span class="line">        clipboard.destroy();</span><br><span class="line">      &#125;)</span><br><span class="line">      clipboard.on(<span class="string">'error'</span>,e=&gt;&#123;</span><br><span class="line">        <span class="keyword">this</span>.$notify.err(&#123;</span><br><span class="line">          title: <span class="string">'失败'</span>,</span><br><span class="line">          message: <span class="string">'复制失败'</span>,</span><br><span class="line">          duration: <span class="number">400</span></span><br><span class="line">        &#125;)</span><br><span class="line">        clipboard.destroy();</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p><strong>说明如下</strong></p>
-<p><strong>这里的 ==linecopy== 是点击复制按钮执行的方法，==参数是你要复制的内容==,  <code>.spa代表着你按钮的类名</code></strong></p>
+<p><img src="https://img-blog.csdnimg.cn/20190921133840764.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMTg2NzMw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h5 id="在quill-js中更改代码如下，要和你上面配置文件中的字体大小设置保持一至。"><a href="#在quill-js中更改代码如下，要和你上面配置文件中的字体大小设置保持一至。" class="headerlink" title="在quill.js中更改代码如下，要和你上面配置文件中的字体大小设置保持一至。"></a>在<font color=red>quill.js</font>中更改代码如下，<strong>要和你上面配置文件中的字体大小设置保持一至</strong>。</h5><p><img src="https://img-blog.csdnimg.cn/20190921134309126.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20190921134844696.png" alt="在这里插入图片描述"></p>
+<h5 id="在quill-core-js中更改代码如下，也要和你上面配置文件中的字体大小设置保持一至。"><a href="#在quill-core-js中更改代码如下，也要和你上面配置文件中的字体大小设置保持一至。" class="headerlink" title="在quill.core.js中更改代码如下，也要和你上面配置文件中的字体大小设置保持一至。"></a>在<font color=red>quill.core.js</font>中更改代码如下，<strong>也要和你上面配置文件中的字体大小设置保持一至</strong>。</h5><p><img src="https://img-blog.csdnimg.cn/20190921134602102.png" alt="在这里插入图片描述"></p>
+<h5 id="接下来修改就要修改css样式了"><a href="#接下来修改就要修改css样式了" class="headerlink" title="接下来修改就要修改css样式了"></a>接下来修改就要修改<font color=red>css样式</font>了</h5><p>&lt;1&gt;先找到<font color=red>quill.bubble.css</font>，修改如下<br><img src="https://img-blog.csdnimg.cn/20190921140126888.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMTg2NzMw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>&lt;2&gt;再找到<font color=red>quill.snow.css </font>，修改如下<br><img src="https://img-blog.csdnimg.cn/2019092114010124.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMTg2NzMw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>&lt;3&gt;最后找到<font color=red>quill.core.css</font>，修改如下<br><img src="https://img-blog.csdnimg.cn/20190921140321662.png" alt="在这里插入图片描述"><br>&lt;4&gt;<strong>最最后强调一遍，所有的自定义字体大小，都要设置样式，本人只是列举出一个，作为例子。</strong></p>
+<p>6.<strong>这就修改成功了，效果如下图</strong><br><img src="https://img-blog.csdnimg.cn/20190921140658703.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMTg2NzMw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>最后说明：这只是本人自己的一些见解，有不足的地方，欢迎大家前来指正。</strong></p>
 
     </div>
 
@@ -337,7 +349,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://dellzhang.github.io/mengen/2019/11/10/%E5%9C%A8vue%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8clipboard%E5%A4%8D%E5%88%B6%E6%96%87%E5%AD%97/" title="在vue中如何使用clipboard复制文字">https://dellzhang.github.io/mengen/2019/11/10/在vue中如何使用clipboard复制文字/</a>
+    <a href="https://dellzhang.github.io/mengen/articles/%E5%A6%82%E4%BD%95%E5%9C%A8vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%EF%BC%8C%E6%9B%B4%E6%94%B9%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8vue-quill-editor%E7%9A%84%E9%BB%98%E8%AE%A4%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%E3%80%82/" title="如何在vue项目中，更改富文本编辑器vue-quill-editor的默认字体大小。">https://dellzhang.github.io/mengen/articles/如何在vue项目中，更改富文本编辑器vue-quill-editor的默认字体大小。/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -350,8 +362,8 @@
           <div class="post-tags">
               <a href="/mengen/tags/js/" rel="tag"><i class="fa fa-tag"></i> js</a>
               <a href="/mengen/tags/vue/" rel="tag"><i class="fa fa-tag"></i> vue</a>
-              <a href="/mengen/tags/%E5%A4%8D%E5%88%B6/" rel="tag"><i class="fa fa-tag"></i> 复制</a>
-              <a href="/mengen/tags/clipboard/" rel="tag"><i class="fa fa-tag"></i> clipboard</a>
+              <a href="/mengen/tags/%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/" rel="tag"><i class="fa fa-tag"></i> 富文本编辑器</a>
+              <a href="/mengen/tags/vue-quill-editor/" rel="tag"><i class="fa fa-tag"></i> vue-quill-editor</a>
           </div>
 
         
@@ -359,13 +371,10 @@
 
         
     <div class="post-nav">
+      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/mengen/2019/11/08/%E5%A6%82%E4%BD%95%E5%9C%A8vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%EF%BC%8C%E6%9B%B4%E6%94%B9%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8vue-quill-editor%E7%9A%84%E9%BB%98%E8%AE%A4%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%E3%80%82/" rel="prev" title="如何在vue项目中，更改富文本编辑器vue-quill-editor的默认字体大小。">
-      <i class="fa fa-chevron-left"></i> 如何在vue项目中，更改富文本编辑器vue-quill-editor的默认字体大小。
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/mengen/2019/11/10/%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8%E8%BF%9B%E5%BA%A6%E6%9D%A1%E6%8F%92%E4%BB%B6nprogress/" rel="next" title="在vue中使用进度条插件nprogress">
-      在vue中使用进度条插件nprogress <i class="fa fa-chevron-right"></i>
+    <a href="/mengen/articles/%E5%9C%A8vue%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8clipboard%E5%A4%8D%E5%88%B6%E6%96%87%E5%AD%97/" rel="next" title="在vue中如何使用clipboard复制文字">
+      在vue中如何使用clipboard复制文字 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -430,7 +439,7 @@
       </ul>
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#首先安装-clipboard"><span class="nav-number">1.</span> <span class="nav-text">首先安装**clipboard</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在需要使用地方引入"><span class="nav-number">2.</span> <span class="nav-text">在需要使用地方引入</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用-Clipboard提供的方法"><span class="nav-number">3.</span> <span class="nav-text">使用  Clipboard提供的方法</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#我们先改，自己封装的vue-quill-editor组件中的字体大小，如图是我自定义的字体大小，false代表的默认选中的字体大小-默认选中的14px。"><span class="nav-number">1.</span> <span class="nav-text">我们先改，自己封装的vue-quill-editor组件中的字体大小，如图是我自定义的字体大小，false代表的默认选中的字体大小,默认选中的14px。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#我们先在-node-modules包-中找到-quill-，再找到它下面的dist文件夹。"><span class="nav-number">2.</span> <span class="nav-text">我们先在  node_modules包 中找到  quill ，再找到它下面的dist文件夹。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在quill-js中更改代码如下，要和你上面配置文件中的字体大小设置保持一至。"><span class="nav-number">3.</span> <span class="nav-text">在quill.js中更改代码如下，要和你上面配置文件中的字体大小设置保持一至。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在quill-core-js中更改代码如下，也要和你上面配置文件中的字体大小设置保持一至。"><span class="nav-number">4.</span> <span class="nav-text">在quill.core.js中更改代码如下，也要和你上面配置文件中的字体大小设置保持一至。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#接下来修改就要修改css样式了"><span class="nav-number">5.</span> <span class="nav-text">接下来修改就要修改css样式了</span></a></li></ol></div>
       </div>
       <!--/noindex-->
       <div class="site-overview-wrap sidebar-panel">

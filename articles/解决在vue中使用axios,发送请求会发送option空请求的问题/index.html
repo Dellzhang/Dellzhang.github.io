@@ -52,7 +52,7 @@
   <meta name="description" content="先让我们来看看为什么浏览器会多发送一个空的option请求呢**因为浏览器在某些请求中，在正式通信前会增加一次HTTP查询请求，称为”预检”请求（preflight）浏览器先询问服务器，当前网页所在的域名是否在服务器的许可名单之中，以及可以使用哪些HTTP动词和头信息字段。只有得到肯定答复，浏览器才会发出正式的XMLHttpRequest请求，否则就报错。 本地环境请求接口的时候，每次请求接口之前">
 <meta property="og:type" content="article">
 <meta property="og:title" content="解决在vue中使用axios,发送请求会发送option空请求的问题">
-<meta property="og:url" content="https:&#x2F;&#x2F;dellzhang.github.io&#x2F;mengen&#x2F;2019&#x2F;12&#x2F;08&#x2F;%E8%A7%A3%E5%86%B3%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8axios,%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E4%BC%9A%E5%8F%91%E9%80%81option%E7%A9%BA%E8%AF%B7%E6%B1%82%E7%9A%84%E9%97%AE%E9%A2%98&#x2F;index.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;dellzhang.github.io&#x2F;mengen&#x2F;articles&#x2F;%E8%A7%A3%E5%86%B3%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8axios,%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E4%BC%9A%E5%8F%91%E9%80%81option%E7%A9%BA%E8%AF%B7%E6%B1%82%E7%9A%84%E9%97%AE%E9%A2%98&#x2F;index.html">
 <meta property="og:site_name" content="梦恩の博客">
 <meta property="og:description" content="先让我们来看看为什么浏览器会多发送一个空的option请求呢**因为浏览器在某些请求中，在正式通信前会增加一次HTTP查询请求，称为”预检”请求（preflight）浏览器先询问服务器，当前网页所在的域名是否在服务器的许可名单之中，以及可以使用哪些HTTP动词和头信息字段。只有得到肯定答复，浏览器才会发出正式的XMLHttpRequest请求，否则就报错。 本地环境请求接口的时候，每次请求接口之前">
 <meta property="og:locale" content="zh_CN">
@@ -64,7 +64,7 @@
 <meta property="article:tag" content="OPTION">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://dellzhang.github.io/mengen/2019/12/08/%E8%A7%A3%E5%86%B3%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8axios,%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E4%BC%9A%E5%8F%91%E9%80%81option%E7%A9%BA%E8%AF%B7%E6%B1%82%E7%9A%84%E9%97%AE%E9%A2%98/">
+<link rel="canonical" href="https://dellzhang.github.io/mengen/articles/%E8%A7%A3%E5%86%B3%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8axios,%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E4%BC%9A%E5%8F%91%E9%80%81option%E7%A9%BA%E8%AF%B7%E6%B1%82%E7%9A%84%E9%97%AE%E9%A2%98/">
 
 
 <script id="page-configurations">
@@ -233,7 +233,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://dellzhang.github.io/mengen/2019/12/08/%E8%A7%A3%E5%86%B3%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8axios,%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E4%BC%9A%E5%8F%91%E9%80%81option%E7%A9%BA%E8%AF%B7%E6%B1%82%E7%9A%84%E9%97%AE%E9%A2%98/">
+    <link itemprop="mainEntityOfPage" href="https://dellzhang.github.io/mengen/articles/%E8%A7%A3%E5%86%B3%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8axios,%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E4%BC%9A%E5%8F%91%E9%80%81option%E7%A9%BA%E8%AF%B7%E6%B1%82%E7%9A%84%E9%97%AE%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/mengen/images/avatar.jpg">
@@ -343,7 +343,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://dellzhang.github.io/mengen/2019/12/08/%E8%A7%A3%E5%86%B3%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8axios,%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E4%BC%9A%E5%8F%91%E9%80%81option%E7%A9%BA%E8%AF%B7%E6%B1%82%E7%9A%84%E9%97%AE%E9%A2%98/" title="解决在vue中使用axios,发送请求会发送option空请求的问题">https://dellzhang.github.io/mengen/2019/12/08/解决在vue中使用axios,发送请求会发送option空请求的问题/</a>
+    <a href="https://dellzhang.github.io/mengen/articles/%E8%A7%A3%E5%86%B3%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8axios,%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E4%BC%9A%E5%8F%91%E9%80%81option%E7%A9%BA%E8%AF%B7%E6%B1%82%E7%9A%84%E9%97%AE%E9%A2%98/" title="解决在vue中使用axios,发送请求会发送option空请求的问题">https://dellzhang.github.io/mengen/articles/解决在vue中使用axios,发送请求会发送option空请求的问题/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -365,11 +365,11 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/mengen/2019/11/10/%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8%E8%BF%9B%E5%BA%A6%E6%9D%A1%E6%8F%92%E4%BB%B6nprogress/" rel="prev" title="在vue中使用进度条插件nprogress">
+    <a href="/mengen/articles/%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8%E8%BF%9B%E5%BA%A6%E6%9D%A1%E6%8F%92%E4%BB%B6nprogress/" rel="prev" title="在vue中使用进度条插件nprogress">
       <i class="fa fa-chevron-left"></i> 在vue中使用进度条插件nprogress
     </a></div>
       <div class="post-nav-item">
-    <a href="/mengen/2019/12/14/%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8postcss-pxtorem%EF%BC%8C%E5%AE%9E%E7%8E%B0rem%E5%B8%83%E5%B1%80/" rel="next" title="在vue中使用postcss-pxtorem，实现rem布局">
+    <a href="/mengen/articles/%E5%9C%A8vue%E4%B8%AD%E4%BD%BF%E7%94%A8postcss-pxtorem%EF%BC%8C%E5%AE%9E%E7%8E%B0rem%E5%B8%83%E5%B1%80/" rel="next" title="在vue中使用postcss-pxtorem，实现rem布局">
       在vue中使用postcss-pxtorem，实现rem布局 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
