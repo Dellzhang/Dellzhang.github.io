@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dellzhang.github.io/"/>
-  <updated>2019-12-19T01:59:42.428Z</updated>
+  <updated>2019-12-19T08:08:06.469Z</updated>
   <id>https://dellzhang.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hello word</title>
+    <link href="https://dellzhang.github.io/articles/a/"/>
+    <id>https://dellzhang.github.io/articles/a/</id>
+    <published>2019-12-19T08:07:28.000Z</published>
+    <updated>2019-12-19T08:08:06.469Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+      <category term="-js" scheme="https://dellzhang.github.io/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>js常见的面试题算法</title>
