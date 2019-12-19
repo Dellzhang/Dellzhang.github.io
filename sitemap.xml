@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dellzhang.github.io/about/index.html</loc>
+    
+    <lastmod>2019-12-19T09:00:23.448Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dellzhang.github.io/articles/postcss-pxtorem/</loc>
     
     <lastmod>2019-12-19T08:19:52.405Z</lastmod>
