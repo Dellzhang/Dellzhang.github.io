@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>vue中页面刷新的方法</title>
+      <link href="//articles/refresh/"/>
+      <url>//articles/refresh/</url>
+      
+        <content type="html"><![CDATA[<h5 id="使用-Location-对象提供的方法"><a href="#使用-Location-对象提供的方法" class="headerlink" title="使用 Location 对象提供的方法"></a>使用 Location 对象提供的方法</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.location.reload()</span><br></pre></td></tr></table></figure><p>==但是这种方法，有的小米手机不会刷新。==</p><h5 id="使用vue路由提供给我们的方法"><a href="#使用vue路由提供给我们的方法" class="headerlink" title="使用vue路由提供给我们的方法"></a>使用vue路由提供给我们的方法</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.$router.go(<span class="number">0</span>)</span><br></pre></td></tr></table></figure><p><strong>相对于当前页面向前或向后跳转多少个页面,类似 window.history.go(n)。n可为正数可为负数。正数返回上一个页面</strong></p><a id="more"></a><p>==但是这种方法，有的小米手机不会刷新。苹果手机也不会刷新==</p><h5 id="使用一个新页面并结合vue路由给我们提供的方法实现页面刷新，这种刷新白屏时间非常短。但是能看见路由快速变化"><a href="#使用一个新页面并结合vue路由给我们提供的方法实现页面刷新，这种刷新白屏时间非常短。但是能看见路由快速变化" class="headerlink" title="使用一个新页面并结合vue路由给我们提供的方法实现页面刷新，这种刷新白屏时间非常短。但是能看见路由快速变化"></a>使用一个新页面并结合vue路由给我们提供的方法实现页面刷新，这种刷新白屏时间非常短。但是能看见路由快速变化</h5><p>  3.1新建一个空白页面组件命名为：empty.vue</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">&lt;<span class="regexp">/template&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">export default &#123;</span></span><br><span class="line"><span class="regexp">  name: 'empty',</span></span><br><span class="line"><span class="regexp">  beforeRouteEnter (to, from, next) &#123;</span></span><br><span class="line"><span class="regexp">    next(vm =&gt; &#123;</span></span><br><span class="line"><span class="regexp">      vm.$router.replace(from.path)</span></span><br><span class="line"><span class="regexp">    &#125;)</span></span><br><span class="line"><span class="regexp">  &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br></pre></td></tr></table></figure><p>  3.2在需要刷新页面的地方</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.$router.push(<span class="string">'/empty'</span>)</span><br></pre></td></tr></table></figure><p><strong>这个页面所作的事情，就是判断页面从那个页面来的，然后在页面还没有加载完成的时候，使用replace方法，拿来的路由替换当前页面，从而实现页面重新加载</strong></p><p>最后说明：这只是本人自己的一些见解，有不足的地方，欢迎大家前来指正。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> js </tag>
+            
+            <tag> vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>js常见的面试题算法</title>
       <link href="//articles/jsinterview/"/>
       <url>//articles/jsinterview/</url>
