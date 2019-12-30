@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dellzhang.github.io/articles/vue-quill-editor/</loc>
+    
+    <lastmod>2019-12-30T02:37:07.001Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dellzhang.github.io/articles/axios/</loc>
+    
+    <lastmod>2019-12-30T02:35:40.240Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dellzhang.github.io/articles/cssAlgin/</loc>
     
     <lastmod>2019-12-27T06:33:08.210Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>https://dellzhang.github.io/articles/expr/</loc>
     
     <lastmod>2019-12-27T03:27:54.568Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dellzhang.github.io/articles/axios/</loc>
-    
-    <lastmod>2019-12-27T02:57:47.053Z</lastmod>
     
   </url>
   
@@ -68,13 +75,6 @@
     <loc>https://dellzhang.github.io/articles/postcss-pxtorem/</loc>
     
     <lastmod>2019-12-19T08:19:52.405Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dellzhang.github.io/articles/vue-quill-editor/</loc>
-    
-    <lastmod>2019-12-19T08:19:37.944Z</lastmod>
     
   </url>
   

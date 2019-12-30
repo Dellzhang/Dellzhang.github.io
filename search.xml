@@ -176,7 +176,7 @@
     
     
     <entry>
-      <title>解决在vue中使用axios,发送请求会发送option空请求的问题</title>
+      <title>在vue中使用axios,会发送option空请求</title>
       <link href="//articles/axios/"/>
       <url>//articles/axios/</url>
       
@@ -267,7 +267,7 @@
     
     
     <entry>
-      <title>如何在vue项目中，更改富文本编辑器vue-quill-editor的默认字体大小。</title>
+      <title>更改vue-quill-editor的默认字体大小。</title>
       <link href="//articles/vue-quill-editor/"/>
       <url>//articles/vue-quill-editor/</url>
       
