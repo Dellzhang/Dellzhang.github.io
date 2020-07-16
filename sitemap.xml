@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dellzhang.github.io/articles/uniapp/</loc>
+    
+    <lastmod>2020-07-16T01:43:03.379Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dellzhang.github.io/articles/uniapp-index/</loc>
+    
+    <lastmod>2020-07-16T01:40:08.302Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dellzhang.github.io/articles/uniapp-apply/</loc>
+    
+    <lastmod>2020-07-16T01:38:01.925Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dellzhang.github.io/articles/expr/</loc>
+    
+    <lastmod>2020-01-17T09:30:35.071Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dellzhang.github.io/about/index.html</loc>
+    
+    <lastmod>2020-01-17T03:01:13.191Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dellzhang.github.io/articles/vue-quill-editor/</loc>
     
     <lastmod>2019-12-30T02:37:07.001Z</lastmod>
@@ -30,13 +65,6 @@
   </url>
   
   <url>
-    <loc>https://dellzhang.github.io/articles/expr/</loc>
-    
-    <lastmod>2019-12-27T03:27:54.568Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://dellzhang.github.io/articles/clipboard/</loc>
     
     <lastmod>2019-12-23T05:06:52.847Z</lastmod>
@@ -61,13 +89,6 @@
     <loc>https://dellzhang.github.io/articles/refresh/</loc>
     
     <lastmod>2019-12-19T09:25:21.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dellzhang.github.io/about/index.html</loc>
-    
-    <lastmod>2019-12-19T09:18:28.908Z</lastmod>
     
   </url>
   
