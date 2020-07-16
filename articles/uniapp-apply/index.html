@@ -69,7 +69,7 @@
 <meta property="og:description" content="支付分为前端发起支付，和后端发起支付两种方式 1.在前端发起支付，uniapp给我们提供好了，可以使用的api接口。 12345678910uni.requestPayment(&amp;#123;    provider: &#39;alipay&#39;,    orderInfo: &#39;orderInfo&#39;, &#x2F;&#x2F;微信、支付宝订单数据    success: function (res) &amp;#123;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-07-08T08:44:46.000Z">
-<meta property="article:modified_time" content="2020-07-16T01:38:01.925Z">
+<meta property="article:modified_time" content="2020-07-16T02:08:09.351Z">
 <meta property="article:author" content="ZhangMengEn">
 <meta property="article:tag" content="vue">
 <meta property="article:tag" content="uniapp">
@@ -268,7 +268,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-16 09:38:01" itemprop="dateModified" datetime="2020-07-16T09:38:01+08:00">2020-07-16</time>
+                <time title="修改时间：2020-07-16 10:08:09" itemprop="dateModified" datetime="2020-07-16T10:08:09+08:00">2020-07-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -295,14 +295,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>4.9k</span>
+              <span>5k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 分钟</span>
+              <span>5 分钟</span>
             </span>
 
         </div>
@@ -323,7 +323,7 @@
 <p>web-view 是一个 web 浏览器组件，可以用来承载网页的容器，会自动铺满整个页面（nvue 使用需要手动指定宽高）。</p>
 </blockquote>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//点击支付的时候，后端返回一个嵌套支付宝或者微信返回的form表单的一个html,把这个url赋值到web-view中</span></span><br><span class="line">&lt;web-view v-<span class="keyword">if</span>=<span class="string">"url.length &gt; 0"</span> :src=<span class="string">"url"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">web-view</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-
+<a id="more"></a>
 <p><strong>我们如何判断用户的支付结果呢，因为是后端对接的支付宝或者微信的支付接口，返回接口只有后端能监控到。</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.这里我们可以轮询查询后台接口，进而判断用户的支付结果（这种比较消耗服务器的性能）</span></span><br><span class="line"><span class="comment">//2.借助用web-view,后端监控到支付结果，返回一个html网页。(我们需要从web-view里面返回到自己的app,序需要用到web-vie和uniapp通讯)</span></span><br><span class="line"><span class="comment">//在返回的html中引入uniapp的js文件</span></span><br><span class="line">&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.2.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="comment">//监听到uniapp的js文件引入成功了,引导用户返回app</span></span><br><span class="line"><span class="built_in">document</span>.addEventListener(<span class="string">'UniAppJSBridgeReady'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">let</span> data = GetRequest()</span><br><span class="line">	    <span class="built_in">document</span>.querySelector(<span class="string">'.btn-list'</span>).addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">evt</span>) </span>&#123; </span><br><span class="line">	    <span class="comment">//跳转到支付成功或者失败的结果页面。</span></span><br><span class="line">	        uni.navigateTo(&#123;</span><br><span class="line">				  url: <span class="string">'/pages/orderDetail/orderDetail?orderId='</span> +  data.out_trade_no</span><br><span class="line">			  &#125;)</span><br><span class="line">	    &#125;);  </span><br><span class="line">	&#125;);</span><br></pre></td></tr></table></figure>
 
