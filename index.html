@@ -269,7 +269,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-16 10:08:09" itemprop="dateModified" datetime="2020-07-16T10:08:09+08:00">2020-07-16</time>
+                <time title="修改时间：2020-07-16 11:10:37" itemprop="dateModified" datetime="2020-07-16T11:10:37+08:00">2020-07-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -384,7 +384,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-16 10:08:19" itemprop="dateModified" datetime="2020-07-16T10:08:19+08:00">2020-07-16</time>
+                <time title="修改时间：2020-07-16 11:09:12" itemprop="dateModified" datetime="2020-07-16T11:09:12+08:00">2020-07-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -468,6 +468,115 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://dellzhang.github.io/articles/vue-quill-editor/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="ZhangMengEn">
+      <meta itemprop="description" content="一个90后web前端工程师,搭建的个人博客网站">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="梦恩の博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/articles/vue-quill-editor/" class="post-title-link" itemprop="url">更改vue-quill-editor的默认字体大小。</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-11-08 10:10:30" itemprop="dateCreated datePublished" datetime="2019-11-08T10:10:30+08:00">2019-11-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-16 11:10:07" itemprop="dateModified" datetime="2020-07-16T11:10:07+08:00">2020-07-16</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/vue-quill-editor/" itemprop="url" rel="index">
+                    <span itemprop="name">vue-quill-editor</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <span id="/articles/vue-quill-editor/" class="post-meta-item leancloud_visitors" data-flag-title="更改vue-quill-editor的默认字体大小。" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>   <strong>它默认有4种字体大小，但是在我们实际的项目，可能不只是想要这几种，还想添加自定义的字体大小。</strong><img src="https://img-blog.csdnimg.cn/20190921132036411.png" alt="在这里插入图片描述"><br><strong>下面我就来教大家，怎样改它的默认字体大小</strong></p>
+<h5 id="我们先改，自己封装的vue-quill-editor组件中的字体大小，如图是我自定义的字体大小，false代表的默认选中的字体大小-默认选中的14px。"><a href="#我们先改，自己封装的vue-quill-editor组件中的字体大小，如图是我自定义的字体大小，false代表的默认选中的字体大小-默认选中的14px。" class="headerlink" title="我们先改，自己封装的vue-quill-editor组件中的字体大小，如图是我自定义的字体大小，false代表的默认选中的字体大小,默认选中的14px。"></a>我们先改，自己封装的vue-quill-editor组件中的字体大小，如图是我自定义的字体大小，<font color=red>false</font>代表的默认选中的<font color=red>字体大小</font>,默认选中的<font color=red>14px</font>。</h5><p><img src="https://img-blog.csdnimg.cn/20190921133609122.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMTg2NzMw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h5 id="我们先在-node-modules包-中找到-quill-，再找到它下面的dist文件夹。"><a href="#我们先在-node-modules包-中找到-quill-，再找到它下面的dist文件夹。" class="headerlink" title="我们先在  node_modules包 中找到  quill ，再找到它下面的dist文件夹。"></a>我们先在 <font color=red> node_modules包 </font>中找到 <font color=red> quill ，</font>再找到它下面的<font color=red>dist文件夹</font>。</h5>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/articles/vue-quill-editor/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+    <div>
+      
+    </div>
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://dellzhang.github.io/articles/uniapp/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -499,7 +608,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-16 10:07:51" itemprop="dateModified" datetime="2020-07-16T10:07:51+08:00">2020-07-16</time>
+                <time title="修改时间：2020-07-16 11:10:21" itemprop="dateModified" datetime="2020-07-16T11:10:21+08:00">2020-07-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -669,113 +778,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/articles/expr/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-    <div>
-      
-    </div>
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://dellzhang.github.io/articles/cssAlgin/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="ZhangMengEn">
-      <meta itemprop="description" content="一个90后web前端工程师,搭建的个人博客网站">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="梦恩の博客">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/articles/cssAlgin/" class="post-title-link" itemprop="url">css实现垂直水平居中的几种方法</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-12-25 14:25:03" itemprop="dateCreated datePublished" datetime="2019-12-25T14:25:03+08:00">2019-12-25</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-27 14:33:08" itemprop="dateModified" datetime="2019-12-27T14:33:08+08:00">2019-12-27</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/css/" itemprop="url" rel="index">
-                    <span itemprop="name">css</span>
-                  </a>
-                </span>
-            </span>
-
-          
-            <span id="/articles/cssAlgin/" class="post-meta-item leancloud_visitors" data-flag-title="css实现垂直水平居中的几种方法" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span><br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>13k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>11 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h5 id="父元素不定宽，利用line-height实现"><a href="#父元素不定宽，利用line-height实现" class="headerlink" title="父元素不定宽，利用line-height实现"></a>父元素不定宽，利用line-height实现</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">  .box&#123;</span><br><span class="line">    height: <span class="number">400</span>px;</span><br><span class="line">    background: red;</span><br><span class="line">  &#125;</span><br><span class="line">  .content&#123;</span><br><span class="line">    line-height: <span class="number">400</span>px; <span class="comment">//设置和父元素的高度一样</span></span><br><span class="line">    text-align: center;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;<span class="regexp">/style&gt;</span></span><br><span class="line"><span class="regexp">&lt;div class="box"&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="content"&gt;</span></span><br><span class="line"><span class="regexp">    这是子元素子元素子元素这是子元素子元素子元素这是子元素子元素子元素这是子元素子元素子元素</span></span><br><span class="line"><span class="regexp">  &lt;/</span>div&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/articles/cssAlgin/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
